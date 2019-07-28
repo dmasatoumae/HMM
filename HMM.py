@@ -33,22 +33,26 @@ def keisan(a,b,c):
             if(i==0)and(j==0):
                 tre[i+1][j+1]=tre[i+1][j+1]
             else:
-                #print("aaaaaaaaaaaaa") 
-                #print(tre[i+1][j+1])
-                #print(tre[i][j])
-                #print(a[i][1])
+            
                 tre[i+1][j+1]=tre[i+1][j+1]*tre[i][j]*a[i-1][1]+tre[i+1][j+1]*tre[i+1][j]*a[i][0]
                 
-                #print(tre[i+1][j+1])
-    unko=tre[3][4]*a[2][1]
+        
+    kekka=tre[3][4]*a[2][1]
 
-    return unko,tre
+    return kekka,tre
 
-
-
+#def viterbi(tre):
+    
+#    for i range(4):
+#        if 
+#def 
 def main():
     a,b,c=tre_matrix()
-    print(keisan(a,b,c))
+    kakuritu,treris=keisan(a,b,c)
+    
+    print(treris)
+    print("確率＝")
+    print(kakuritu)
 
 
 
